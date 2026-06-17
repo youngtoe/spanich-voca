@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Español Flow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Español Flow 🇪🇸</h1>
+<p>스페인어 암기 & 동사 활용 트레이너</p>
+</header>
+
+<section class="card">
+<h2>오늘의 단어</h2>
+<div id="flashcard" class="flash">apetece</div>
+<button onclick="flipCard()">뒤집기</button>
+</section>
+
+<section class="card">
+<h2>동사 활용 퀴즈</h2>
+<p id="question"></p>
+<input id="answer" placeholder="정답 입력">
+<button onclick="check()">확인</button>
+<p id="result"></p>
+</section>
+
+<section class="card">
+<h2>통계</h2>
+<p>정답: <span id="score">0</span></p>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
